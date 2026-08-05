@@ -1,0 +1,25 @@
+generated: '2026-08-04'
+method: probed
+source: live probes of https://mytra.ai/.well-known/*
+host: https://mytra.ai
+note: >-
+  Every /.well-known/ path returns 404. Note that mytra.ai is a Nuxt/Sanity
+  single-page marketing site that answers HTTP 200 with a ~61KB HTML shell for
+  any unknown path (/openapi.json, /llms.txt, /docs, /api-docs all return 200
+  HTML, not documents) — but it does correctly 404 the /.well-known/ namespace,
+  so these statuses are real misses rather than SPA catch-all noise.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404

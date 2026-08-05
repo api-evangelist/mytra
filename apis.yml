@@ -1,10 +1,20 @@
 aid: mytra
 name: Mytra
-description: 'Mytra is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Mytra, Inc. is a Brisbane, California robotics company founded in 2022
+  by former Tesla robotics lead Chris Walti, building what it calls software-defined
+  warehousing: a three-part system of low-profile MytraBots that travel in X, Y and
+  Z through a modular steel "cell" matrix up to 80 feet tall, and an AI-driven operating
+  system that plans routes, resolves conflicts and dynamically reconfigures the matrix
+  to store and retrieve anything from cases to full 3,000 lb pallets. The company raised
+  a $120M Series C led by Avenir Growth in January 2026 (roughly $200M total) and sells
+  the system as installed industrial infrastructure to enterprise distribution and
+  food-and-beverage operators. Mytra publishes no developer program, no public API,
+  and no machine-readable API contract.'
+image: https://image-cdn.mytra.ai/images/xg8bw7px/production/ff82fd7bd29f5c4aeedee58b8a8bad63321d0201-1920x1080.png
 url: https://raw.githubusercontent.com/api-evangelist/mytra/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source: https://forgeglobal.com/mytra_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +22,13 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Robotics
+- Warehouse Automation
+- Supply Chain
+- Logistics
+- Material Handling
+- Industrial Automation
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,43 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mytra-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/mytra_stock/
+  url: https://mytra.ai/
+- type: About
+  url: https://mytra.ai/company
+- type: News
+  url: https://mytra.ai/news
+- type: Careers
+  url: https://mytra.ai/careers
+- type: Patents
+  url: https://mytra.ai/patents
+- type: TermsOfService
+  url: https://mytra.ai/terms
+- type: PrivacyPolicy
+  url: https://mytra.ai/privacy
+- type: LLMsTxt
+  url: llms/mytra-llms.txt
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    mytra.ai is a 24-URL Nuxt marketing site whose only sections are news, company,
+    careers, patents and legal; there is no developer page, and api./docs./developer./
+    mcp.mytra.ai do not resolve in DNS at all, so the robots (bots, cells, operating
+    system) are sold and integrated as installed infrastructure rather than behind a
+    public API.
+  evidence:
+  - url: https://mytra.ai/sitemap.xml
+    status: 200
+  - url: https://mytra.ai/.well-known/agent-card.json
+    status: 404
+  - url: https://mytra.ai/.well-known/security.txt
+    status: 404
+  checked: '2026-08-04'
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
