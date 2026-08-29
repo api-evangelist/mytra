@@ -10,6 +10,17 @@ description: 'Mytra, Inc. is a Brisbane, California robotics company founded in 
   the system as installed industrial infrastructure to enterprise distribution and
   food-and-beverage operators. Mytra publishes no developer program, no public API,
   and no machine-readable API contract.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://image-cdn.mytra.ai/images/xg8bw7px/production/ff82fd7bd29f5c4aeedee58b8a8bad63321d0201-1920x1080.png
 url: https://raw.githubusercontent.com/api-evangelist/mytra/refs/heads/main/apis.yml
 x-type: company
