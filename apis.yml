@@ -21,6 +21,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://image-cdn.mytra.ai/images/xg8bw7px/production/ff82fd7bd29f5c4aeedee58b8a8bad63321d0201-1920x1080.png
 url: https://raw.githubusercontent.com/api-evangelist/mytra/refs/heads/main/apis.yml
 x-type: company
